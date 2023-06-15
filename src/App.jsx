@@ -12,11 +12,15 @@ function App() {
       <div className="tab-ui">
         <div className="tab-group">
           <a
-            style={tab===0 ? {color:'red'} : null} 
+            style={tab===0 ? {color:'red', background:'black'} : null} 
             href="#tab1" 
             onClick={()=>setTab(0)}>HTML</a>
-          <a href="#tab2" onClick={()=>setTab(1)}>CSS</a>
-          <a href="#tab3" onClick={()=>setTab(2)}>JavaScript</a>
+          <a
+            style={tab===1 ? {color:'red', background:'black'} : null}  
+            href="#tab2" onClick={()=>setTab(1)}>CSS</a>
+          <a 
+            style={tab===2 ? {color:'red', background:'black'} : null} 
+            href="#tab3" onClick={()=>setTab(2)}>JavaScript</a>
         </div>
         <div className="tab-contents">
           
